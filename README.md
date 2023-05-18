@@ -12,7 +12,7 @@ Le jeu a pour but de placer le bon nombre de bouches d'incendie afin de sauver l
 
 1. Créez le Makefile :
    ```bash
-   mkdir build; cd build ; cmake .
+   mkdir build; cd build ; cmake ..
    ```
 2. Exécutez le jeu :
    ```bash
