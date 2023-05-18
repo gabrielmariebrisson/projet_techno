@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(126, 223, 126);
+}
+
+.iconDetails {
+   height:75px;
+   width:75px; 
+   vertical-align:middle;
+} 
+
+.iconInfo {
+	font-size:160%;
+	vertical-align:middle;
+	display:inline;
+}
+ 
+#mycanvas {
+    display: block; 
+    margin: 0 auto;
+    background-image:url(./src/background.png);
+    background-position:0% 100%;
+    background-size: 180%, 100%;
+    /* Hint: do not add padding to canvas! */
+}
+
+#buttonrestart {
+    background-image: url(./src/Restart.png);
+    background-position:5000% 5000%;
+    background-size: 100%, 100%;
+}
+#buttonredo {
+    background-image: url(./src/Redo.png);
+    background-position:5000% 5000%;
+    background-size: 100%, 100%;
+}
+#buttonrandom {
+    background-image: url(./src/random.png);
+    background-position:5000% 5000%;
+    background-size: 100%, 100%;
+}
+#buttonsolve {
+    background-image: url(./src/Solve.png);
+    background-position:5000% 5000%;
+    background-size: 100%, 100%;
+}
+#buttonundo {
+    background-image: url(./src/Undo.png);
+    background-position:5000% 5000%;
+    background-size: 100%, 100%;
+}

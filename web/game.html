@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="canvas.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+
+    <!-- ********************* html ********************* -->
+    <center>
+    <h1>Sauvez les petits écureuils !</h1>
+   
+    <canvas id='mycanvas' width="504px" height="504px"></canvas>
+    <br>
+    <canvas id='buttonrestart' width="150px" height="150px"></canvas>
+    <canvas id='buttonundo' width="150px" height="150px"></canvas>
+    <canvas id='buttonredo' width="150px" height="150px"></canvas>
+    <br>
+    <canvas id='buttonrandom' width="150px" height="150px"></canvas>
+    <canvas id='buttonsolve' width="150px" height="150px"></canvas>
+	
+    </center>
+	
+    <hr>
+    <p style="font-size:160%;text-align:center;">
+		Le but du jeu est d'éteindre tous les incendies à l'aide des bouches à incendies.<br>
+		Les maisons des écureuils peuvent être marqués des chiffres 0 à 4, et aussi ne pas être marquées. <br>
+		Il faut que le nombre de bouches à incendie autour d'une maison soit égal au nombre sur cette maison .<br>
+		Deux bouches à incendies ne peuvent pas être sur une même ligne ou colonne sans qu'une maison soit entre les deux.<br>
+		<br>
+		Vous pouvez poser une bouche à incendie en utilisant le clic gauche de votre souris.<br>
+		Quelques outils sont à votre disposition :<br>
+		Utilisez reset pour redémarrer votre partie du début. (Attention ! Toute progression sera perdue !)<br>
+		Utilisez undo et redo pour respectivement annuler et rétablir le dernier coup joué.<br>
+		Utilisez random pour démarrer un niveau aléatoire.<br>
+		Utilisez solve pour résoudre le niveau actuel.<br>
+    </p>
+		
+    <center>
+		<table>
+			<tr>
+				<td>
+					<img class="iconDetails" src='./src/Restart.png'>
+					<div class="iconInfo"  >
+						Ce bouton est le bouton restart.
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img class="iconDetails" src='./src/Redo.png'>
+					<div class="iconInfo">
+						Ce bouton est le bouton redo.
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img class="iconDetails" src='./src/Undo.png'>
+					<div class="iconInfo">
+						Ce bouton est le bouton undo.
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img class="iconDetails" src='./src/random.png'>
+					<div class="iconInfo">
+						Ce bouton est le bouton random.
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img class="iconDetails" src='./src/Solve.png'>
+					<div class="iconInfo">
+						Ce bouton est le bouton solve.
+					</div>
+				</td>
+			</tr>
+		</table>
+	</center>
+
+	<pre id="result"></pre>
+	
+    <hr>
+
+    <!-- ********************* script ********************* -->
+
+    <script src="game.js"></script>
+    <script src="demo.js"> </script>
+
+</body>
+
+</html>
